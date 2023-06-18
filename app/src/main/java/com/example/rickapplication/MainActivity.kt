@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                 if (response.isSuccessful){
                     val responseRick = response.body()
                     val dataRick = responseRick?.results
-                    val rickAdapter = RickAdapter(dataRick as List<ResultsItem>)
+                    val rickAdapter = RickAdapter(dataRick)
                     rick.apply {
                         layoutManager = LinearLayoutManager(this@MainActivity)
                         setHasFixedSize(true)

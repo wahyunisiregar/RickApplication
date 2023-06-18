@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class RickAdapter(val dataRick: List<ResultsItem>): RecyclerView.Adapter<RickAdapter.MyViewHolder>() {
+class RickAdapter(val dataRick: List<ResultsItem?>?): RecyclerView.Adapter<RickAdapter.MyViewHolder>() {
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imgRick = view.findViewById<ImageView>(R.id.item_image_Rick)
         val nameRick = view.findViewById<TextView>(R.id.item_name_rick)
